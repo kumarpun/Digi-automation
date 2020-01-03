@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...   
+      - npm install
+      - npm install -g protractor
+  build:
+    commands:
+      - npm run postinstall
+      - npm run pretest
+      - npm run test     
+  post_build:
+    commands:
+      - protractor protractor.conf.js
