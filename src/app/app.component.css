@@ -8,21 +8,20 @@
 
 }
 h1{
-    color: #78787a;
+    color: rgb(97, 187, 247);
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .form-button{
-    margin-left: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    float:left;
+    margin-right:5px;
 }
 .color{
-    background-color: #78787a;
+    background-color: rgb(97, 187, 247);
     color: #ffffff;
     font-size: 15px;
     height: 40px;
-    width: 90px;
+    width: 110px;
+    float:left;
+    margin-right:5px;
 }
