@@ -1,6 +1,5 @@
 import { AppPage } from '../app.po';
 import { browser, ExpectedConditions, element, by } from 'protractor';
-import { async } from '@angular/core/testing';
 import { triggerAsyncId } from 'async_hooks';
 import { protractor } from 'protractor/built/ptor';
 
