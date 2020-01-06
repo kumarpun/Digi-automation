@@ -3,6 +3,7 @@ var path=require('path');
 const spawn = require('child_process').spawn;
 var shell = require('shelljs');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 
 const app = express();
 app.use(cors());
@@ -10,6 +11,8 @@ app.use(cors());
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname+'/index.html'));
 })
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true}));
 
 app.use(express.static(__dirname));
 // var testscript = exec('sh ec2startscript.sh /Users/apple/desktop/digii-automation/digii-test');

@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="51" errors="0" failures="0" tests="52" time="3.718">
- <testsuite name="Login Page" timestamp="2020-01-06T15:13:59" hostname="localhost" time="3.701" errors="0" tests="3" skipped="0" disabled="2" failures="0">
-  <testcase classname="Login Page" name="should log the user in when the user exists" time="3.695" />
-  <testcase classname="Login Page" name="should send error text when user does not exist" time="0.002">
+<testsuites disabled="51" errors="0" failures="0" tests="52" time="4.225">
+ <testsuite name="Login Page" timestamp="2020-01-06T22:50:05" hostname="localhost" time="4.212" errors="0" tests="3" skipped="0" disabled="2" failures="0">
+  <testcase classname="Login Page" name="should log the user in when the user exists" time="4.212" />
+  <testcase classname="Login Page" name="should send error text when user does not exist" time="0">
    <skipped />
   </testcase>
   <testcase classname="Login Page" name="should show error text when password is invalid" time="0">
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Comment section" timestamp="2020-01-06T15:14:02" hostname="localhost" time="0.009" errors="0" tests="9" skipped="0" disabled="9" failures="0">
+ <testsuite name="Comment section" timestamp="2020-01-06T22:50:09" hostname="localhost" time="0.003" errors="0" tests="9" skipped="0" disabled="9" failures="0">
   <testcase classname="Comment section" name="Verify user can post a text on messageboard" time="0">
    <skipped />
   </testcase>
   <testcase classname="Comment section" name="Verify user can comment on post" time="0">
    <skipped />
   </testcase>
-  <testcase classname="Comment section" name="Verify user can edit post" time="0">
+  <testcase classname="Comment section" name="Verify user can edit post" time="0.001">
    <skipped />
   </testcase>
   <testcase classname="Comment section" name="Verify user can cancel the edited post" time="0">
    <skipped />
   </testcase>
-  <testcase classname="Comment section" name="Verify user can delete comment" time="0.001">
+  <testcase classname="Comment section" name="Verify user can delete comment" time="0">
    <skipped />
   </testcase>
-  <testcase classname="Comment section" name="Verify user can post a text on messageboard" time="0.007">
+  <testcase classname="Comment section" name="Verify user can post a text on messageboard" time="0.001">
    <skipped />
   </testcase>
   <testcase classname="Comment section" name="Verify user can delete the own post" time="0">
    <skipped />
   </testcase>
-  <testcase classname="Comment section" name="Verify user can react on post" time="0">
+  <testcase classname="Comment section" name="Verify user can react on post" time="0.001">
    <skipped />
   </testcase>
   <testcase classname="Comment section" name="Verify user can react on comment" time="0">
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Post Section" timestamp="2020-01-06T15:14:02" hostname="localhost" time="0.001" errors="0" tests="6" skipped="0" disabled="6" failures="0">
+ <testsuite name="Post Section" timestamp="2020-01-06T22:50:09" hostname="localhost" time="0.002" errors="0" tests="6" skipped="0" disabled="6" failures="0">
   <testcase classname="Post Section" name="Verify user can post a text on messageboard" time="0">
    <skipped />
   </testcase>
@@ -54,11 +54,11 @@
   <testcase classname="Post Section" name="Verify user can post a gif" time="0">
    <skipped />
   </testcase>
-  <testcase classname="Post Section" name="Verify user can post a picture" time="0.001">
+  <testcase classname="Post Section" name="Verify user can post a picture" time="0.002">
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Moderation for post" timestamp="2020-01-06T15:14:02" hostname="localhost" time="0.001" errors="0" tests="5" skipped="0" disabled="5" failures="0">
+ <testsuite name="Moderation for post" timestamp="2020-01-06T22:50:09" hostname="localhost" time="0" errors="0" tests="5" skipped="0" disabled="5" failures="0">
   <testcase classname="Moderation for post" name="Verify first moderated text can be caught" time="0">
    <skipped />
   </testcase>
@@ -75,11 +75,11 @@
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Need help Section" timestamp="2020-01-06T15:14:02" hostname="localhost" time="0.001" errors="0" tests="5" skipped="0" disabled="5" failures="0">
+ <testsuite name="Need help Section" timestamp="2020-01-06T22:50:09" hostname="localhost" time="0.002" errors="0" tests="5" skipped="0" disabled="5" failures="0">
   <testcase classname="Need help Section" name="Verify student can request help for himself right now" time="0">
    <skipped />
   </testcase>
-  <testcase classname="Need help Section" name="Verify student can request help for himself using soon" time="0">
+  <testcase classname="Need help Section" name="Verify student can request help for himself using soon" time="0.001">
    <skipped />
   </testcase>
   <testcase classname="Need help Section" name="Verify student can request help for someone else" time="0.001">
@@ -92,7 +92,7 @@
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Report section" timestamp="2020-01-06T15:14:02" hostname="localhost" time="0" errors="0" tests="2" skipped="0" disabled="2" failures="0">
+ <testsuite name="Report section" timestamp="2020-01-06T22:50:09" hostname="localhost" time="0" errors="0" tests="2" skipped="0" disabled="2" failures="0">
   <testcase classname="Report section" name="Verify student can post on message board" time="0">
    <skipped />
   </testcase>
@@ -100,7 +100,7 @@
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Teacher Login Page" timestamp="2020-01-06T15:14:02" hostname="localhost" time="0.002" errors="0" tests="4" skipped="0" disabled="4" failures="0">
+ <testsuite name="Teacher Login Page" timestamp="2020-01-06T22:50:09" hostname="localhost" time="0.002" errors="0" tests="4" skipped="0" disabled="4" failures="0">
   <testcase classname="Teacher Login Page" name="should send error text when user does not exist" time="0">
    <skipped />
   </testcase>
@@ -114,7 +114,7 @@
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Need help Section for teacher" timestamp="2020-01-06T15:14:02" hostname="localhost" time="0" errors="0" tests="3" skipped="0" disabled="3" failures="0">
+ <testsuite name="Need help Section for teacher" timestamp="2020-01-06T22:50:09" hostname="localhost" time="0" errors="0" tests="3" skipped="0" disabled="3" failures="0">
   <testcase classname="Need help Section for teacher" name="Verify student can request help for himself right now" time="0">
    <skipped />
   </testcase>
@@ -125,7 +125,7 @@
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Teacher help response" timestamp="2020-01-06T15:14:02" hostname="localhost" time="0.001" errors="0" tests="5" skipped="0" disabled="5" failures="0">
+ <testsuite name="Teacher help response" timestamp="2020-01-06T22:50:09" hostname="localhost" time="0.002" errors="0" tests="5" skipped="0" disabled="5" failures="0">
   <testcase classname="Teacher help response" name="Teacher should be able to cancel new help request pop up through grey tick" time="0">
    <skipped />
   </testcase>
@@ -138,11 +138,11 @@
   <testcase classname="Teacher help response" name="Teacher should be able to close/complete help request" time="0">
    <skipped />
   </testcase>
-  <testcase classname="Teacher help response" name="Teacher should be able to accept new help request through grey tick" time="0.001">
+  <testcase classname="Teacher help response" name="Teacher should be able to accept new help request through grey tick" time="0.002">
    <skipped />
   </testcase>
  </testsuite>
- <testsuite name="Tutorial section" timestamp="2020-01-06T15:14:02" hostname="localhost" time="0.002" errors="0" tests="10" skipped="0" disabled="10" failures="0">
+ <testsuite name="Tutorial section" timestamp="2020-01-06T22:50:09" hostname="localhost" time="0.002" errors="0" tests="10" skipped="0" disabled="10" failures="0">
   <testcase classname="Tutorial section" name="Verify student can view tutorial category" time="0">
    <skipped />
   </testcase>
@@ -152,7 +152,7 @@
   <testcase classname="Tutorial section" name="Verify student can view all video when search field is cleared" time="0">
    <skipped />
   </testcase>
-  <testcase classname="Tutorial section" name="Verify student can watch tutorial video based on category" time="0.001">
+  <testcase classname="Tutorial section" name="Verify student can watch tutorial video based on category" time="0">
    <skipped />
   </testcase>
   <testcase classname="Tutorial section" name="Verify student can view specific category" time="0">
@@ -167,7 +167,7 @@
   <testcase classname="Tutorial section" name="Verify student can go back to video list after answered question correctly" time="0">
    <skipped />
   </testcase>
-  <testcase classname="Tutorial section" name="Verify student gain extra 10 digit point if answered questions correctly" time="0.001">
+  <testcase classname="Tutorial section" name="Verify student gain extra 10 digit point if answered questions correctly" time="0.002">
    <skipped />
   </testcase>
   <testcase classname="Tutorial section" name="Verify student are provided with two option if answers are incorrect" time="0">

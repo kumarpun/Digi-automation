@@ -4,6 +4,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DigiiService } from './services/protractor.service';
+import { CustomMaterialModule } from './core/material/material.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { DigiiService } from './services/protractor.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CustomMaterialModule
   ],
   providers: [
     DigiiService
