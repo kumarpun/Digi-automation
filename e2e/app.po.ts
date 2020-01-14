@@ -9,6 +9,8 @@ import { TutorialPage } from './tutorial/tutorial.po';
 import { TeacherLoginPage } from './TeacherLogin/teacherloginPage.po';
 import { TeacherNeedHelpResponse } from './TeacherNeedHelpResponse/teacherneedhelpPage.po';
 import { StudentReportPage } from './studentreport/studentreport.po';
+import { StudentProfilePage } from './students profile/studentprofile.po';
+import { from } from 'rxjs';
 
 export interface AutomationUser {
   email: string;
@@ -23,7 +25,7 @@ export interface AutomationUserForTeacher {
 
 export class AppPage {
   public users: AutomationUser[] = [
-    { email: 'chelsea', password: 'test' },
+    { email: 'kumar2', password: 'test' },
   ];
 
   public teacherusers: AutomationUserForTeacher[] = [
@@ -40,7 +42,7 @@ export class AppPage {
   public needhelprequest = new NeedHelpRequestPage();
   public tutorial = new TutorialPage();
   public studentReport = new StudentReportPage();
-
+  public studentProfile = new StudentProfilePage();
   // teacher
 
   public teacherlogin = new TeacherLoginPage();

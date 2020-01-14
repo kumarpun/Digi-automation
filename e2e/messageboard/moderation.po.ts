@@ -20,7 +20,7 @@ export class ModerationPage {
         return element(by.xpath("//body/div[@id='root']/div/div[@class='css-o2pqu8']/div[@class='css-1ua5vwp']/div[@class='css-1kt1vmt']/div[@class='css-1syh5d8']/div[@class='css-1575f4t']/div[@class='css-10vt4hq']/div[@class='css-5e2h08']['red']/*[2]"))
     }
     public get firstBackToChat(): ElementFinder {
-        return element(by.xpath("//button[contains(text(),'Back to Chat')]"))
+        return element(by.xpath("//button[text()='Back to Chat']"))
     }
     public get textAreaForMessage(): ElementFinder {
         return element(by.xpath("//textarea[@placeholder='What do you want to say, Chelsea?']"));

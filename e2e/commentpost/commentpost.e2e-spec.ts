@@ -32,6 +32,8 @@ describe('Comment section', () => {
         
         await browser.wait(ExpectedConditions.visibilityOf(app.notification.textAreaForPost));
         await app.notification.textAreaForPost.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.moderation.firstBackToChat));
+        await app.moderation.firstBackToChat.click();
         await app.notification.textAreaForPost.sendKeys('helloooo from automation');
         await app.moderation.PostButton.click();
         browser.sleep(5000);
@@ -46,7 +48,8 @@ describe('Comment section', () => {
         await app.commentpost.writeComment.click();
         await app.commentpost.writeComment.sendKeys('comment from automation');
         browser.actions().sendKeys(protractor.Key.ENTER).perform();
-        
+        browser.sleep(5000);
+
      });
 
      it('Verify user can edit post', async () => {
@@ -60,6 +63,7 @@ describe('Comment section', () => {
          await app.commentpost.inputTextBox.sendKeys('Test for edit from automation');
          await browser.wait(ExpectedConditions.visibilityOf(app.commentpost.EditButton));
          await app.commentpost.EditButton.click();
+         browser.sleep(5000);
 
      });
 
@@ -72,6 +76,8 @@ describe('Comment section', () => {
         await app.commentpost.inputTextBox.clear();
         await app.commentpost.inputTextBox.sendKeys('Test for edit from automation');
         await app.commentpost.CancelButton.click();
+        browser.sleep(5000);
+
     });
 
     it('Verify user can delete comment', async () => {
@@ -84,6 +90,8 @@ describe('Comment section', () => {
         browser.actions().sendKeys(protractor.Key.ENTER).perform();
         await browser.wait(ExpectedConditions.visibilityOf(app.commentpost.deleteIcon));
         await app.commentpost.deleteIcon.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.commentpost.deleteCommentIcon));
+        await app.commentpost.deleteCommentIcon.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.commentpost.deleteButton));
         await app.commentpost.deleteButton.click();
         browser.sleep(5000);
@@ -93,6 +101,8 @@ describe('Comment section', () => {
         
         await browser.wait(ExpectedConditions.visibilityOf(app.notification.textAreaForPost));
         await app.notification.textAreaForPost.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.moderation.firstBackToChat));
+        await app.moderation.firstBackToChat.click();
         await app.notification.textAreaForPost.sendKeys('helloooo from automation');
         await app.moderation.PostButton.click();
         browser.sleep(5000);
@@ -111,6 +121,13 @@ describe('Comment section', () => {
 
     it('Verify user can react on post', async() => {
 
+        await browser.wait(ExpectedConditions.visibilityOf(app.notification.textAreaForPost));
+        await app.notification.textAreaForPost.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.moderation.firstBackToChat));
+        await app.moderation.firstBackToChat.click();
+        await app.notification.textAreaForPost.sendKeys('test');
+        await app.moderation.PostButton.click();
+        browser.sleep(5000);
         await browser.wait(ExpectedConditions.visibilityOf(app.commentpost.likeButton));
         await app.commentpost.likeButton.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.commentpost.likePopup));
@@ -121,6 +138,13 @@ describe('Comment section', () => {
 
     it('Verify user can react on comment', async () => {
 
+        await browser.wait(ExpectedConditions.visibilityOf(app.notification.textAreaForPost));
+        await app.notification.textAreaForPost.click();
+        await browser.wait(ExpectedConditions.visibilityOf(app.moderation.firstBackToChat));
+        await app.moderation.firstBackToChat.click();
+        await app.notification.textAreaForPost.sendKeys('test');
+        await app.moderation.PostButton.click();
+        browser.sleep(5000);
         await browser.wait(ExpectedConditions.visibilityOf(app.commentpost.clickComment));
         await app.commentpost.clickComment.click();
         await app.commentpost.clickComment.click();

@@ -17,7 +17,7 @@ describe('Post Section', () => {
         await app.validLogin(app.users[0].email, app.users[0].password);
         await (browser.wait(ExpectedConditions.visibilityOf(app.notification.textAreaForPost)));
         await app.notification.textAreaForPost.click();
-    
+
         var backToChatButton = app.moderation.firstBackToChat;
         backToChatButton.isPresent().then(function(result) {
         if (result) {
@@ -31,8 +31,8 @@ describe('Post Section', () => {
         }); 
     })
 
-    it('Verify user can post a text on messageboard', async () => {
-       
+   it('Verify user can post a text on messageboard', async () => {
+
        await app.notification.textAreaForPost.sendKeys('helloooo from automation');
        await app.moderation.PostButton.click();
        browser.sleep(5000);
@@ -46,6 +46,8 @@ describe('Post Section', () => {
        await (browser.wait(ExpectedConditions.visibilityOf(app.moderation.SelectBanner)));
        await app.moderation.SelectBanner.click();
        await app.moderation.PostButton.click();
+       browser.sleep(5000);
+
     
    });
    
@@ -56,6 +58,8 @@ describe('Post Section', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.moderation.happyFeeling)));
         await app.moderation.happyFeeling.click();
         await app.moderation.PostButton.click();
+        browser.sleep(5000);
+
    })
 
    it('Verify user can post a tag', async () => {
@@ -80,7 +84,9 @@ describe('Post Section', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.moderation.coolGifSelect)));
         await app.moderation.coolGifSelect.click();
         browser.sleep(5000);
-        await app.moderation.PostButton.click();        
+        await app.moderation.PostButton.click();   
+        browser.sleep(5000);
+     
    })
 
    var path = require('path');

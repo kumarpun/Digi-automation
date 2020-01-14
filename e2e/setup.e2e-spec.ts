@@ -2,7 +2,7 @@ import { browser, ExpectedConditions } from 'protractor';
 import { AppPage } from './app.po';
 import { async } from 'q';
 
-describe('Login Page', () => {
+describe('Student Login Page', () => {
   let app: AppPage;
 
   beforeEach(async () => {
@@ -36,7 +36,7 @@ describe('Login Page', () => {
     expect(await app.notification.getNotificationForWrongPassword()).toContain(app.notification.wrongLoginInformation);
   });
 
-  fit('should log the user in when the user exists', async () => {
+  it('should log the user in when the user exists', async () => {
 
     await app.login.setSchool();
     await browser.wait(ExpectedConditions.visibilityOf(app.login.Yunderup));
