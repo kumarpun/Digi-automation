@@ -13,7 +13,7 @@ exports.config = {
   capabilities: {
     'browserName': 'chrome',
     'chromeOptions': {
-        args: ["--start-maximized", "--window-size=1630,963"]
+        args: ["--headless", "--start-maximized", "--window-size=1630,963"]
     }
   },
   directConnect: true,
