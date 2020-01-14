@@ -38,6 +38,7 @@ exports.config = {
         savePath: './',
         filePrefix: 'xmlresults'
     }));
+    // require("./e2e/setup.e2e-spec")
   },
     onComplete: function () {
       var browserName, browserVersion;
@@ -52,11 +53,9 @@ exports.config = {
               reportTitle: 'Protractor Test Execution Report',
               outputPath: './',
               outputFilename: 'ProtractorTestReport',
-              screenshotPath: './screenshots',
               testBrowser: browserName,
               browserVersion: browserVersion,
               modifiedSuiteName: false,
-              screenshotsOnlyOnFailure: false,
               testPlatform: platform
           };
           new htmlReporter().from('./xmlresults.xml', testConfig);

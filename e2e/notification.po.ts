@@ -2,8 +2,8 @@ import { browser, by, element, ElementFinder, ExpectedConditions } from 'protrac
 import { rendererTypeName } from '@angular/compiler';
 
 export class Notification {
-  public wrongStudentsMessage = 'Error:Student not found';
-  public wrongLoginInformation = 'Error:Looks like you have entered the wrong login information. Please try again.';
+  public wrongStudentsMessage = 'Student not found';
+  public wrongLoginInformation = 'Looks like you have entered the wrong login information. Please try again.';
 
   
   // Elements
@@ -16,7 +16,7 @@ export class Notification {
   }
 
   public get textAreaForPost(): ElementFinder {
-    return element(by.xpath("//textarea[@placeholder='What do you want to say, Chelsea?']"));
+    return element(by.xpath("//textarea[@placeholder='What do you want to say, Kumar2?']"));
   }
 
   // Actions

@@ -7,7 +7,7 @@ export class CommentPostPage {
     }
     // comment on post
     public get clickComment(): ElementFinder {
-        return element(by.xpath('//*[@id="root"]/div/div/div/div[2]/div/div/div/div[1]/div[2]/div[1]/div[1]/div[2]/div[2]/span/div/span/span'));
+        return element(by.xpath("//body//div[@class='css-1jgxnjg']//div//div[1]//div[1]//div[2]//div[2]//span[1]//div[1]//span[1]//span[1]"));
     }
     public get writeComment(): ElementFinder {
         return element(by.xpath("//input[@placeholder='Write a comment']"));
@@ -36,7 +36,10 @@ export class CommentPostPage {
         return element(by.xpath("//span[contains(text(),'delete comment')]"));
     }
     public get deleteIcon(): ElementFinder {
-        return element(by.xpath("//div[@class='css-1jgxnjg']//div//div[1]//div[2]//div[1]//div[1]//div[1]//div[2]//div[1]"));
+        return element(by.xpath("//div[5]//div[2]//div[1]//div[1]//div[1]//div[2]//div[1]//div[1]//button[1]"));
+    }
+    public get deleteCommentIcon(): ElementFinder {
+        return element(by.xpath("//div[contains(text(),'Delete')]"));
     }
     public get deleteButton(): ElementFinder {
         return element(by.xpath("//button[contains(text(), 'Delete')]"));
@@ -56,7 +59,7 @@ export class CommentPostPage {
 
     // reaction
     public get likeButton(): ElementFinder {
-        return element(by.xpath('//*[@id="root"]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/span/span'));
+        return element(by.xpath("//body/div[@id='root']/div/div[contains(@class,'scrollableDiv css-1d09mqm')]/div[contains(@class,'css-yfmfo2')]/div[contains(@class,'css-1t5u7ok')]/div[contains(@class,'clearfix')]/div[contains(@class,'css-1jgxnjg')]/div/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[1]/span[1]"));
     }
     public get likePopup(): ElementFinder {
         return element(by.xpath("//div[@class='css-1ujdyi1']"));
@@ -75,7 +78,7 @@ export class CommentPostPage {
 
     // reaction on comment
     public get likeForComment(): ElementFinder {
-        return element(by.xpath('//*[@id="root"]/div/div/div/div[2]/div/div/div[1]/div/div[2]/div[1]/div[2]/div[1]/div/div/div[1]/span[4]/div[1]/div'));
+        return element(by.xpath("//body//div[contains(@class,'css-1jgxnjg')]//div//div[1]//div[2]//div[1]//div[1]//div[1]//div[1]//span[4]//div[1]//div[1]"));
     }
     public get commentReactionPopup(): ElementFinder {
         return element(by.xpath("//div[@class='css-xeuqdv']"));
@@ -86,6 +89,10 @@ export class CommentPostPage {
 
     // click outside
     public get clickOutside(): ElementFinder {
+        return element(by.xpath("//img[@class='css-c9shju']"));
+    }
+
+    public get logo(): ElementFinder {
         return element(by.xpath("//img[@class='css-c9shju']"));
     }
 }

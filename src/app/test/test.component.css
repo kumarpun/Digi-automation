@@ -1,0 +1,27 @@
+.container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-top: 110px;
+
+}
+h1{
+    color: rgb(97, 187, 247);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-button{
+    float:left;
+    margin-right:5px;
+}
+.color{
+    background-color: rgb(97, 187, 247);
+    color: #ffffff;
+    font-size: 15px;
+    height: 40px;
+    width: 110px;
+    float:left;
+    margin-right:5px;
+}
