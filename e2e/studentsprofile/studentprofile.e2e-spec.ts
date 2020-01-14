@@ -50,7 +50,7 @@ fdescribe('Student Profile section', () => {
         browser.sleep(5000); 
     })
 
-    it('Verify student can see post details from pop up', async () => {
+   it('Verify student can see post details from pop up', async () => {
 
         await browser.wait(ExpectedConditions.visibilityOf(app.studentProfile.ProfileImage));
         await app.studentProfile.ProfileImage.click();
