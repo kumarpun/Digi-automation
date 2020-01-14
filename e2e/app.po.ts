@@ -9,7 +9,7 @@ import { TutorialPage } from './tutorial/tutorial.po';
 import { TeacherLoginPage } from './TeacherLogin/teacherloginPage.po';
 import { TeacherNeedHelpResponse } from './TeacherNeedHelpResponse/teacherneedhelpPage.po';
 import { StudentReportPage } from './studentreport/studentreport.po';
-import { StudentProfilePage } from './students profile/studentprofile.po';
+import { StudentProfilePage } from './studentsprofile/studentprofile.po';
 import { from } from 'rxjs';
 
 export interface AutomationUser {
