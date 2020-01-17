@@ -49,13 +49,13 @@ public get TimProfile(): ElementFinder {
 }
 
 public get writeComment(): ElementFinder {
-    return element(by.xpath("//div[contains(@class,'0 css-1v6o86m')]//div[contains(@class,'commentBox')]//div[contains(@class,'css-2dtiw8')]//div[contains(@class,'css-1nkczhv')]//div//input[contains(@placeholder,'Write a comment')]"));
+    return element(by.xpath('//*[@id="root"]/div/div[3]/div/div/div/div[3]/div[1]/div[1]/div[2]/div/div/div/div/div[2]/div/div/div[2]/div[1]/input'));
 }
 public get LikeButton(): ElementFinder {
     return element(by.xpath("//div[contains(@class,'0 css-ufza8x')]//div[contains(@class,'css-1cerdqh')]//span//span[contains(text(),'Like')]"));
 }
 public get LoveReact(): ElementFinder {
-    return element(by.xpath("//div[contains(@class,'css-1lsf637')]//div[3]"));
+    return element(by.xpath("//div[contains(@class,'css-9fcy2h')]//div[3]"));
 }
 
 public get likecomment(): ElementFinder {

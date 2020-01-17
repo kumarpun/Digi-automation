@@ -34,6 +34,8 @@ fdescribe('Student Profile section', () => {
 
         await browser.wait(ExpectedConditions.visibilityOf(app.studentProfile.ProfileImage));
         await app.studentProfile.ProfileImage.click();
+        browser.sleep(5000); 
+
     })
 
     it('Verify student can edit their profile', async () => {
@@ -124,7 +126,7 @@ fdescribe('Student Profile section', () => {
         await app.studentProfile.clickForPopUp.click();
         await browser.wait(ExpectedConditions.visibilityOf(app.studentProfile.writeComment));
         await app.studentProfile.writeComment.click();
-        await app.studentProfile.writeComment.sendKeys('Test');
+        await app.studentProfile.writeComment.sendKeys('Test for pop up');
         browser.actions().sendKeys(protractor.Key.ENTER).perform();
         browser.sleep(5000);
 
