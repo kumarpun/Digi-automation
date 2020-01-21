@@ -5,7 +5,7 @@ import { protractor } from 'protractor/built/ptor';
 import { async } from '@angular/core/testing';
 import { first } from 'rxjs/operators';
 
-fdescribe('Student Profile section', () => {
+describe('Student Profile section', () => {
     let app = new AppPage();
 
     beforeEach(async () => {

@@ -72,6 +72,6 @@ export class ModerationPage {
         return element(by.xpath("//span[contains (text(), 'PHOTO/VIDEO')]"));
     }
     public get photoUpload(): ElementFinder {
-        return element(by.xpath('//*[@id="root"]/div/div/div/div[3]/div/div/div[1]/div/div[1]/div/div[1]/div[2]/div'));
+        return element(by.xpath("//body/div[@id='root']/div/div[@class='scrollableDiv css-1d09mqm']/div[@class='css-yfmfo2']/div[@class='css-sjdzh7']/div[@class='clearfix']/div[@class='css-1jgxnjg']/div/div[@class='focused css-g7vndo']/div[@class='css-13952ex']/div[@class='css-zl546o']/div/div[@class='css-1raujjh']/*[1]"));
     }
 }
