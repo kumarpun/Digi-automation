@@ -74,4 +74,15 @@ export class ModerationPage {
     public get photoUpload(): ElementFinder {
         return element(by.xpath("//body/div[@id='root']/div/div[@class='scrollableDiv css-1d09mqm']/div[@class='css-yfmfo2']/div[@class='css-sjdzh7']/div[@class='clearfix']/div[@class='css-1jgxnjg']/div/div[@class='focused css-g7vndo']/div[@class='css-13952ex']/div[@class='css-zl546o']/div/div[@class='css-1raujjh']/*[1]"));
     }
+
+    // challenges pop up
+    public get noCheckbox(): ElementFinder {
+        return element(by.xpath("//span[contains(text(),'No')]"));
+    }
+    public get challengeSumit(): ElementFinder {
+        return element(by.xpath("//button[contains(text(),'Submit')]"));
+    }
+    public get challengePopup(): ElementFinder {
+        return element(by.xpath("//div[@class='invisibleScrollableDiv css-1g8zz7o']"));
+    }
 }
