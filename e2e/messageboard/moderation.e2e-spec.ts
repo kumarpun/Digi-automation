@@ -4,7 +4,7 @@ import { async } from '@angular/core/testing';
 import { triggerAsyncId } from 'async_hooks';
 import { protractor } from 'protractor/built/ptor';
 
-fdescribe('Post Section', () => {
+describe('Post Section', () => {
     let app = new AppPage();
 
     beforeEach(async () => {
@@ -45,7 +45,7 @@ fdescribe('Post Section', () => {
 
 })
 
-   it('Verify user can post a text on messageboard', async () => {
+   fit('Verify user can post a text on messageboard', async () => {
 
        await app.notification.textAreaForPost.sendKeys('helloooo from automation');
        await app.moderation.PostButton.click();
