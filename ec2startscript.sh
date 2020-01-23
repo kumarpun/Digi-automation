@@ -11,7 +11,7 @@ protractor protractor.conf.js
 # Copy test report to html
 echo "Copy test reoprt to html"
 
-#  sudo cp ProtractorTestReport.html ../../html
+ sudo cp ProtractorTestReport.html ../../html
 
 # Send test report to slack channel
 echo "Send test report to slack channel"
