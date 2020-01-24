@@ -31,7 +31,7 @@ export class TeacherLoginPage {
 
     // error message
     public get errorMessageForInvalidCredential(): ElementFinder {
-        return element(by.xpath('//*[@id="root"]/div/div/div[2]/form/div[2]/p'));
+        return element(by.xpath('//*[@id="root"]/div/div[2]/form/div[2]/p'));
     }
 
     public get errorMessageForWrongPassword(): ElementFinder {
