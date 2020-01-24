@@ -79,10 +79,16 @@ export class ModerationPage {
     public get noCheckbox(): ElementFinder {
         return element(by.xpath("//span[contains(text(),'No')]"));
     }
+    public get yesCheckbox(): ElementFinder {
+        return element(by.xpath("//span[contains(text(),'yes')]"));
+    }
     public get challengeSumit(): ElementFinder {
         return element(by.xpath("//button[contains(text(),'Submit')]"));
     }
     public get challengePopup(): ElementFinder {
         return element(by.xpath("//div[@class='invisibleScrollableDiv css-1g8zz7o']"));
+    }
+    public get BacktoChatpopup(): ElementFinder {
+        return element(by.xpath("//button[contains(text(),'Back to Chat')]"));
     }
 }

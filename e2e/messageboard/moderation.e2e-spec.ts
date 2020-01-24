@@ -1,10 +1,10 @@
 import { AppPage } from '../app.po';
-import { browser, ExpectedConditions, element, by } from 'protractor';
+import { browser, ExpectedConditions, element, by, utils } from 'protractor';
 import { async } from '@angular/core/testing';
 import { triggerAsyncId } from 'async_hooks';
 import { protractor } from 'protractor/built/ptor';
 
-fdescribe('Post Section', () => {
+describe('Post Section', () => {
     let app = new AppPage();
 
     beforeEach(async () => {
@@ -16,21 +16,26 @@ fdescribe('Post Section', () => {
         await (browser.wait(ExpectedConditions.visibilityOf(app.login.emailInput()), 10000));
         await app.validLogin(app.users[0].email, app.users[0].password);
         await (browser.wait(ExpectedConditions.visibilityOf(app.notification.textAreaForPost)));
-        // await (browser.wait(ExpectedConditions.visibilityOf(app.moderation.challengePopup)))
-        await app.notification.textAreaForPost.click();
+        browser.sleep(5000);
+        // await (browser.wait(ExpectedConditions.visibilityOf(app.moderation.challengePopup), 3000))
+        // browser.manage().timeouts().implicitlyWait(1000);
+        var challengePopup = app.moderation.challengePopup;
+            challengePopup.isPresent().then(function(result) {
+                if (result) {
+                    browser.wait(ExpectedConditions.visibilityOf(app.moderation.challengePopup))
+                    browser.wait(ExpectedConditions.visibilityOf(app.moderation.noCheckbox))
+                    app.moderation.noCheckbox.click();
+                    browser.wait(ExpectedConditions.visibilityOf(app.moderation.challengeSumit))
+                    app.moderation.challengeSumit.click();
+                    browser.wait(ExpectedConditions.visibilityOf(app.moderation.BacktoChatpopup))
+                    app.moderation.BacktoChatpopup.click();
+    
+                } else {
+                    (browser.wait(ExpectedConditions.visibilityOf(app.notification.textAreaForPost))); 
+                }
+            })
         
-        // var challengePopup = app.moderation.challengePopup;
-        // challengePopup.isPresent().then(function(result) {
-        //     if (result) {
-        //         browser.wait(ExpectedConditions.visibilityOf(app.moderation.noCheckbox))
-        //         app.moderation.noCheckbox.click();
-        //         browser.wait(ExpectedConditions.visibilityOf(app.moderation.challengeSumit))
-        //         app.moderation.challengeSumit.click();
-        //     } else {
-        //         (browser.wait(ExpectedConditions.visibilityOf(app.notification.textAreaForPost))); 
-        //         app.notification.textAreaForPost.click();
-        //     }
-        // })
+        app.notification.textAreaForPost.click();
         var backToChatButton = app.moderation.firstBackToChat;
         backToChatButton.isPresent().then(function(result) {
         if (result) {
@@ -42,6 +47,11 @@ fdescribe('Post Section', () => {
             app.notification.textAreaForPost.click();
            }
         }); 
+
+  
+        // browser.manage().timeouts().implicitlyWait(1000);
+    
+    
 
 })
 
@@ -105,7 +115,7 @@ fdescribe('Post Section', () => {
 
    var path = require('path');
 
-   it('Verify user can post a picture', async () => {
+   fit('Verify user can post a picture', async () => {
 
     var fileToUpload = '../../snn.jpg',
     absolutePath = path.resolve(__dirname, fileToUpload);
