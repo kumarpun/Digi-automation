@@ -59,7 +59,7 @@ export class CommentPostPage {
 
     // reaction
     public get likeButton(): ElementFinder {
-        return element(by.xpath("//body/div[@id='root']/div/div[contains(@class,'scrollableDiv css-1d09mqm')]/div[contains(@class,'css-yfmfo2')]/div[contains(@class,'css-1t5u7ok')]/div[contains(@class,'clearfix')]/div[contains(@class,'css-1jgxnjg')]/div/div/div[1]/div[1]/div[2]/div[2]/div[1]/span[1]/span[1]"));
+        return element(by.xpath('//*[@id="root"]/div/div[3]/div[2]/div/div/div[1]/div/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/span/span'));
     }
     public get likePopup(): ElementFinder {
         return element(by.xpath("//div[@class='css-1ujdyi1']"));
