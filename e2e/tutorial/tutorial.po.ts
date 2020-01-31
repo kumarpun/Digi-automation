@@ -29,13 +29,13 @@ export class TutorialPage {
         return element(by.xpath("//div[@class='css-8m5ric']//div[2]//span[4]//input[1]"));
     }
     public get questionTwoAnswer(): ElementFinder {
-        return element(by.xpath("//div[3]//span[4]//input[1]"));
+        return element(by.xpath("//div[@class='css-yfmfo2']//div[3]//span[4]//input[1]"));
     }
     public get questionOneWrongAnswer(): ElementFinder {
         return element(by.xpath("//div[@class='css-8m5ric']//div[2]//span[3]//input[1]"));
     }
     public get questionTwoWrongAnswer(): ElementFinder {
-        return element(by.xpath("//div[3]//span[3]//input[1]"))
+        return element(by.xpath("//div[@class='css-yfmfo2']//div[3]//span[3]//input[1]"))
     }
     public get submitAnswerButton(): ElementFinder {
         return element(by.xpath("//button[contains(text(), 'Submit Answer')]"));

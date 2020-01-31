@@ -115,7 +115,7 @@ describe('Post Section', () => {
 
    var path = require('path');
 
-   fit('Verify user can post a picture', async () => {
+   it('Verify user can post a picture', async () => {
 
     var fileToUpload = '../../snn.jpg',
     absolutePath = path.resolve(__dirname, fileToUpload);

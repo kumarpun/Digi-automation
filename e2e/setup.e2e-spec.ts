@@ -20,6 +20,7 @@ describe('Student Login Page', () => {
     await app.login.setEmailText('non-existent-email@email.com');
     await app.login.setPasswordText('random-password');
     await app.login.clickLoginBtn();
+    browser.sleep(5000);
     await app.notification.waitForNotificationExistence();
     expect(await app.notification.getNotificationMessage()).toContain(app.notification.wrongStudentsMessage);
   });
@@ -32,6 +33,7 @@ describe('Student Login Page', () => {
     await app.login.setEmailText(app.users[0].email)
     await app.login.setPasswordText('invalid-password');
     await app.login.clickLoginBtn();
+    browser.sleep(5000);
     await app.notification.waitForNotificationExistenceForWrongPassword()
     expect(await app.notification.getNotificationForWrongPassword()).toContain(app.notification.wrongLoginInformation);
   });
@@ -44,6 +46,7 @@ describe('Student Login Page', () => {
     await app.login.setEmailText(app.users[0].email);
     await app.login.setPasswordText(app.users[0].password);
     await app.login.clickLoginBtn();
+    browser.sleep(5000);
   });
     
 });
